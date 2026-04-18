@@ -307,7 +307,7 @@ const LeadRow = memo(function LeadRow({
       </td>
       <td className="px-4 py-3 text-center">
         {lead.riskFlag ? (
-          <AlertTriangle size={16} className="mx-auto text-red-400" title={lead.riskReason} />
+          <AlertTriangle size={16} className="mx-auto text-red-400" aria-label={lead.riskReason} />
         ) : (
           <span className="text-zinc-600">—</span>
         )}
