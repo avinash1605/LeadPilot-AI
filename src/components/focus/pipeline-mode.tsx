@@ -27,6 +27,7 @@ const stageLabels: Record<Lead["stage"], string> = {
   negotiation: "Negotiation",
   won: "Won",
   lost: "Lost",
+  cold: "Cold",
 };
 
 const temperatureFilters: Array<Lead["temperature"] | "all"> = [
