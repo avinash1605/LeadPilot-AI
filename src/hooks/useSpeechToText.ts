@@ -21,7 +21,7 @@ export function useSpeechToText() {
     recognition.interimResults = true;
     recognition.lang = "en-US";
 
-    recognition.onresult = (event: SpeechRecognitionEvent) => {
+    recognition.onresult = (event: Event) => {
       const result = Array.from(event.results)
         .map((res) => res[0].transcript)
         .join(" ");
