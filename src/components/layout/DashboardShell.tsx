@@ -11,7 +11,7 @@ export function DashboardShell({ children }: DashboardShellProps) {
     <div className="flex min-h-screen bg-background text-text-primary">
       <Sidebar isMobile={false} />
       <div className="flex flex-1 flex-col gap-6 p-6">
-        <Topbar />
+        <Topbar isMobile={false} onMenuToggle={() => {}} />
         <section className="flex-1">{children}</section>
       </div>
     </div>
